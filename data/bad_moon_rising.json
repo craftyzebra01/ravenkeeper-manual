@@ -1,21 +1,5 @@
 {
     "name": "Bad Moon Rising",
-async function loadScripts() {
-    const scripts = await Promise.all(
-        scriptFiles.map(async (path) => {
-            const res = await fetch(path)
-            const data = await res.json()
-            return {path, data}
-        })
-    )
-
-    scripts.forEach(({path, data}) => {
-        const option = document.createElement('option')
-        option.value = path
-        option.textContent = data.name
-        scriptSelect.appendChild(option)
-    })
-}
     "roles": [
         "Grandmother",
         "Sailor",

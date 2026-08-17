@@ -1,4 +1,4 @@
-{
+const troubleBrewingData = {
     "name": "Trouble Brewing",
     "roles": [
         "Washerwoman",
