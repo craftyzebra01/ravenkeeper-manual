@@ -4,6 +4,7 @@ const playerList = document.getElementById('player-list')
 const roleCountDisplay = document.getElementById('role-count-display')
 
 const initialPlayerCount = 8
+const initialScript = "Trouble Brewing"
 
 const roleCountMapping = {
     'Players': Array.from({length: 15-5+1}, (_, i) => i+5),
@@ -12,7 +13,6 @@ const roleCountMapping = {
     'Minions': [1,1,1,1,1,2,2,2,3,3,3],
     'Demons': [1,1,1,1,1,1,1,1,1,1,1]
 }
-console.log(roleCountMapping)
 
 //scripts/data/trouble_brewing.json
 const scriptFiles = [
@@ -34,6 +34,9 @@ async function loadScripts() {
         const option = document.createElement('option')
         option.value = data.name
         option.textContent = data.name
+        if (initialScript === data.name) {
+            option.selected = true
+        }
         scriptSelect.appendChild(option)
     })
 }
@@ -69,7 +72,6 @@ async function handleScriptChange(event) {
 async function handleNumPlayerCountChange(event) {
     // this should reset the player list with the correct amount of li
     const numPlayers = event.target.value
-    console.log(`New Player Count: ${numPlayers}`)
     playerList.innerHTML = '';
 
     for (let i = 1; i <= numPlayers; i++) {
@@ -94,7 +96,6 @@ async function handleNumPlayerCountChange(event) {
 }
 
 function initNumPlayerCount(playerCount) {
-    console.log("initializing numPlayerCount dropdown")
     numPlayersSelect.addEventListener('change', handleNumPlayerCountChange)
     numPlayersSelect.innerHTML = ''
     for (let i = 5; i <= 15; i++) {
@@ -111,8 +112,6 @@ function initNumPlayerCount(playerCount) {
 }
 
 function initRoleCountDisplay(playerCount) {
-    console.log("initializing roleCountDisplay table")
-    
     const rows = ['Players', 'Townsfolk', 
         'Outsiders', 'Minions', 'Demons'].map((role) => {
             const data = Array.from({length: 11}, (_, i) =>
@@ -133,10 +132,16 @@ function initRoleCountDisplay(playerCount) {
     roleCountDisplay.innerHTML = rows
 }
 
-console.log("hello world!")
-loadScripts()
-scriptSelect.addEventListener('change', handleScriptChange);
+async function initScriptSelect(initialScriptName) {
+    scriptSelect.addEventListener('change', handleScriptChange)
+    await loadScripts()
+    handleScriptChange({target: scriptSelect})
+}
 
-initNumPlayerCount(initialPlayerCount)
-initRoleCountDisplay(initialPlayerCount)
+async function initPage() {
+    await initScriptSelect(initialScript)
+    initNumPlayerCount(initialPlayerCount)
+    initRoleCountDisplay(initialPlayerCount)
+}
 
+initPage()
