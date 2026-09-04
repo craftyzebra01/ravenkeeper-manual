@@ -1,0 +1,15 @@
+{
+  "name": "tools",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape-roles.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "node scrape-roles.js",
+    "generate": "node generate-scripts.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

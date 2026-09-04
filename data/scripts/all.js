@@ -1,0 +1,1 @@
+const allScripts = [badMoonRisingData, troubleBrewingData, sectsAndVioletsData, last_game]
