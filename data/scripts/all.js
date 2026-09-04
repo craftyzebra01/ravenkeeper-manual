@@ -1,0 +1,1 @@
+const allScripts = [last_game]
