@@ -28,7 +28,7 @@ try {
         fs.writeFileSync(`${DEST_PATH}/fmt_${name}.js`, js_file_data)
     }
 
-    fs.writeFileSync(`${DEST_PATH}/all.js`, `const allScripts = [${names.toString()}]`)
+    fs.writeFileSync(`${DEST_PATH}/all.js`, `const allScripts = [badMoonRisingData, troubleBrewingData, sectsAndVioletsData, ${names.toString()}]`)
 } catch (err) {
     console.error(err)
 }

@@ -601,78 +601,97 @@
   },
   {
     "name": "General",
+    "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
     "team": "Townsfolk"
   },
   {
     "name": "Huntsman",
+    "ability": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",
     "team": "Townsfolk"
   },
   {
     "name": "King",
+    "ability": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows you are the King.",
     "team": "Townsfolk"
   },
   {
     "name": "Lycanthrope",
+    "ability": "Each night*, choose an alive player. If good, they die & the Demon doesn’t kill tonight. One good player registers as evil.",
     "team": "Townsfolk"
   },
   {
     "name": "Magician",
+    "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
     "team": "Townsfolk"
   },
   {
     "name": "Nightwatchman",
+    "ability": "Once per game, at night, choose a player: they learn you are the Nightwatchman.",
     "team": "Townsfolk"
   },
   {
     "name": "Noble",
+    "ability": "You start knowing 3 players, 1 and only 1 of which is evil.",
     "team": "Townsfolk"
   },
   {
     "name": "Pixie",
+    "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
     "team": "Townsfolk"
   },
   {
     "name": "Poppy Grower",
+    "ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
     "team": "Townsfolk"
   },
   {
     "name": "Preacher",
+    "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",
     "team": "Townsfolk"
   },
   {
     "name": "Acrobat",
+    "ability": "Each night*, choose a player: if they are or become drunk or poisoned tonight, you die.",
     "team": "Townsfolk"
   },
   {
     "name": "Knight",
+    "ability": "You start knowing 2 players that are not the Demon.",
     "team": "Townsfolk"
   },
   {
     "name": "Steward",
+    "ability": "You start knowing 1 good player.",
     "team": "Townsfolk"
   },
   {
     "name": "High Priestess",
+    "ability": "Each night, learn which player the Storyteller believes you should talk to most.",
     "team": "Townsfolk"
   },
   {
     "name": "Shugenja",
+    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
     "team": "Townsfolk"
   },
   {
     "name": "Village Idiot",
+    "ability": "Each night, choose a player: you learn their alignment. [+0 to +2 Village Idiots. 1 of the extras is drunk]",
     "team": "Townsfolk"
   },
   {
     "name": "Banshee",
+    "ability": "If the Demon kills you, all players learn this. From now on, you may nominate twice per day and vote twice per nomination.",
     "team": "Townsfolk"
   },
   {
     "name": "Alsaahir",
+    "ability": "Each day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
     "team": "Townsfolk"
   },
   {
     "name": "Princess",
+    "ability": "On your 1st day, if you nominated & executed a player, the Demon doesn’t kill tonight.",
     "team": "Townsfolk"
   }
 ]
