@@ -1,1 +1,1 @@
-const allScripts = [last_game]
+const allScripts = [badMoonRisingData, troubleBrewingData, sectsAndVioletsData, last_game]

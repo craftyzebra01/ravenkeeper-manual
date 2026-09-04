@@ -1,9 +1,9 @@
-const allScripts = [
-    troubleBrewingData, 
-    badMoonRisingData, 
-    sectsAndVioletsData,
-    last_game
-]
+// const allScripts = [
+//     troubleBrewingData, 
+//     badMoonRisingData, 
+//     sectsAndVioletsData,
+//     last_game
+// ]
 const scriptSelect = document.getElementById('script-select')
 const numPlayersSelect = document.getElementById('num-players-select')
 const playerList = document.getElementById('player-list')
