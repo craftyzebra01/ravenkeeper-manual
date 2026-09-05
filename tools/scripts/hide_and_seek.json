@@ -1,0 +1,25 @@
+{
+    "name": "Hide and Seek",
+    "roles": [
+        "noble", "dreamer", "librarian",
+        "seamstress", "pixie", "artist",
+        "preacher", "huntsman", "town crier",
+        "oracle", "ravenkeeper", "undertaker", 
+        "virgin", "damsel", "mutant", "drunk",
+        "goon", "godfather", "poisoner",
+        "mezepheles", "cerenovus", "pukka",
+        "imp", "vigormortis", "ojo"],
+    "firstNight": [
+        "Dusk", "Minion Info", "Demon Info",
+        "preacher", "Poisoner", "Godfather", 
+        "Cerenovus", "Mezepheles", "Pukka", 
+        "Pixie", "Huntsman", "Damsel", 
+        "Librarian", "Dreamer", "Seamstress", 
+        "Noble", "Dawn"],
+    "otherNight": [
+        "Dusk", "Preacher", "Poisoner", "Cerenovus",
+        "Mezepheles", "Imp", "Pukka", "Vigormortis",
+        "Ojo", "Godfather", "Huntsman", "Damsel",
+        "Ravenkeeper", "Undertaker", "Dreamer", 
+        "Town Crier", "Oracle", "Seamstress", "Dawn"]
+}
