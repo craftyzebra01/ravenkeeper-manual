@@ -226,8 +226,8 @@ function populateRoleDescriptions(scriptName) {
 
 function initPage() {
     initScriptSelect(initialScript)
-    initNumPlayerCount(initialPlayerCount)
     initRoleCountDisplay(initialPlayerCount)
+    initNumPlayerCount(initialPlayerCount)
 }
 
 initPage()
