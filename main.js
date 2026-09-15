@@ -116,6 +116,19 @@ function handleScriptChange(event) {
 }
 
 
+function highlightRoleCountColumn(playerCount) {
+    const activeIndex = Number(playerCount) - 5
+    roleCountDisplay.querySelectorAll('td').forEach((td) => {
+        td.classList.remove('active-column')
+    })
+    ;['Players', 'Townsfolk', 'Outsiders', 'Minions', 'Demons'].forEach((role) => {
+        const cell = document.getElementById(`${role}-${activeIndex}`)
+        if (cell) {
+            cell.classList.add('active-column')
+        }
+    })
+}
+
 function handleNumPlayerCountChange(event) {
     // this should reset the player list with the correct amount of li
     const numPlayers = event.target.value
@@ -140,6 +153,8 @@ function handleNumPlayerCountChange(event) {
     selects.forEach(el => {
         el.innerHTML = options
     })
+
+    highlightRoleCountColumn(numPlayers)
 }
 
 function initNumPlayerCount(playerCount) {
@@ -177,6 +192,7 @@ function initRoleCountDisplay(playerCount) {
         }).join('')
     
     roleCountDisplay.innerHTML = rows
+    highlightRoleCountColumn(playerCount)
 }
 
 function initScriptSelect(initialScriptName) {
@@ -210,8 +226,8 @@ function populateRoleDescriptions(scriptName) {
 
 function initPage() {
     initScriptSelect(initialScript)
-    initNumPlayerCount(initialPlayerCount)
     initRoleCountDisplay(initialPlayerCount)
+    initNumPlayerCount(initialPlayerCount)
 }
 
 initPage()
